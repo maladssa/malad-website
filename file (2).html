@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملدّ | الأعمال</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="لوقو ملدّ">
+    </div>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html">الخدمات</a>
+        <a href="portfolio.html">الأعمال</a>
+        <a href="register.html">التسجيل</a>
+    </nav>
+</header>
+
+<section class="content">
+    <h2>الأعمال</h2>
+
+    <div id="gallery" class="gallery"></div>
+</section>
+
+<script>
+fetch("gallery.json")
+  .then(res => res.json())
+  .then(data => {
+      let gallery = document.getElementById("gallery");
+      data.images.forEach(src => {
+          let img = document.createElement("img");
+          img.src = "gallery/" + src;
+          gallery.appendChild(img);
+      });
+  });
+</script>
+
+<footer>
+    © جميع الحقوق محفوظة لمؤسسة ملدّ
+</footer>
+
+</body>
+</html>
