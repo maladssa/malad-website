@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: "Tahoma", sans-serif;
+    background: #2b1509; /* بني غامق */
+    color: #f2e0c8; /* بيج فاتح */
+}
+
+/* الهيدر */
+header {
+    background: #1e0e04;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 90px;
+}
+
+/* القائمة */
+nav a {
+    color: #f2e0c8;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d7b18a;
+}
+
+/* قسم الهيرو */
+.hero {
+    height: 50vh;
+    background: #3a1d0c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #f2e0c8;
+    font-size: 28px;
+    text-shadow: 0 0 12px #000;
+}
+
+/* المحتوى */
+.content {
+    padding: 40px 25px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #f2e0c8;
+}
+
+/* خدمات */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #3a1d0c;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0004;
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+/* معرض الصور */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0005;
+}
+
+/* نماذج التسجيل */
+form {
+    background: #3a1d0c;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px #0005;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    background: #2b1509;
+    border: 0;
+    padding: 12px;
+    margin-bottom: 15px;
+    color: #f2e0c8;
+    border-radius: 6px;
+}
+
+button {
+    background: #2b1509;
+    color: #f2e0c8;
+    padding: 12px 25px;
+    border: 0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4b2712;
+}
+
+/* الفوتر */
+footer {
+    background: #1e0e04;
+    padding: 20px;
+    text-align: center;
+    color: #bfa78c;
+    font-size: 14px;
+}
